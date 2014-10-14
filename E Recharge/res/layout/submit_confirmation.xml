@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/LargeTitleAlt"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_larger"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_larger" >
+
+        <TextView
+            style="@style/LargeTitleLabelAlt"
+            android:layout_centerHorizontal="true"
+            android:text="@string/lbl_way_to_save" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_larger"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_larger"
+        android:layout_marginTop="@dimen/sc_default_view_spacing"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/Title"
+                android:text="@string/lbl_you_just_claimed" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_marginBottom="@dimen/sc_default_view_spacing"
+                android:layout_marginTop="@dimen/sc_default_view_spacing"
+                android:layout_weight="1.0" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/claim_amount" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_claim_amount"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/sc_default_view_spacing" >
+
+                <TextView
+                    android:id="@+id/processing_time"
+                    style="@style/Label"
+                    android:layout_width="fill_parent"
+                    android:layout_marginBottom="@dimen/sc_default_view_spacing"
+                    android:gravity="center"
+                    android:text="@string/lbl_processing_time"
+                    android:textSize="@dimen/font_size_12" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/processing_time"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_marginRight="@dimen/btn_alt_spacing"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/btn_alt_repeat"
+                        android:clickable="true"
+                        android:onClick="finish" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/btn_alt_left_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="@dimen/btn_padding_bottom"
+                            android:text="Back to Offers"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/font_size_14" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/btn_alt_left_r" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_marginLeft="@dimen/btn_alt_spacing"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/btn_alt_repeat"
+                        android:clickable="true"
+                        android:onClick="startMyAccountActivity" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/btn_alt_right_l" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:onClick="startMyAccountActivity"
+                            android:paddingBottom="@dimen/btn_padding_bottom"
+                            android:text="Your Account"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/font_size_14" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/btn_alt_right_r" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/SplitActionBarAlt"
+        android:layout_height="@dimen/sab_alt_height"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin_larger"
+        android:paddingRight="@dimen/activity_horizontal_margin_larger" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:lineSpacingMultiplier="@dimen/line_spacing"
+                android:text="Help your friends\nsave as well."
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_14" />
+
+            <RelativeLayout
+                android:id="@+id/btn_share"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginBottom="1.0dip"
+                android:layout_marginLeft="7.0dip"
+                android:layout_marginTop="@dimen/drop_shadow"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_light_selector"
+                android:clickable="true"
+                android:onClick="share"
+                android:paddingBottom="@dimen/btn_fb_share_vertical_padding"
+                android:paddingLeft="@dimen/btn_fb_share_horizontal_padding"
+                android:paddingTop="@dimen/btn_fb_share_vertical_padding" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="15.0dip"
+                    android:text="Share App"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

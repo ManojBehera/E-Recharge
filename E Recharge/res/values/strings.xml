@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">E Recharge</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_forgot_password">Forgot your password?</string>
+    <string name="btn_login">Log In</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_email">Your email address</string>
+    <string name="lbl_amount">Enter Amount or select from the plan</string>
+    <string name="lbl_login">Log In</string>
+    <string name="lbl_have_account">I already have an account!</string>
+    <string name="lbl_have_coupons">or proceed to coupons!!</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_continue">Continue</string>
+    <string name="lbl_tailor_offers">(This helps us provide offers tailored to you)</string>
+    <string name="lbl_password_length">Password (min 6 characters)</string>
+    <string name="lbl_last_name">Last name</string>
+    <string name="lbl_first_name">First name</string>
+    <string name="lbl_mobile_number">Enter mobile number</string>
+    <string name="lbl_create_account">Create Account</string>
+    <string name="lbl_recharge_account">Recharge Mobile</string>
+    <string name="lbl_processing_time">Approved amount will be added to your account. Receipts are typically processed within 48 hours.</string>
+    <string name="lbl_you_just_claimed">You just claimed</string>
+
+    <color name="ros_concrete">#fff2f2f2</color>
+    <color name="drop_shadow_dark">#20000000</color>
+    <color name="white">#ffffffff</color>
+
+    <string name="lbl_way_to_save">Way to save!</string>
+    <string name="btn_get_started">Get Started</string>
+    <string name="lbl_how_it_works">How it works</string>
+    <string name="OK">OK</string>
+    <string name="lbl_still_no_email">Still not getting the email?</string>
+    <string name="lbl_spam_folder">Be sure to check your spam folder as well.</string>
+    <string name="lbl_update_email">Update email address</string>
+    <string name="lbl_resend_link">Re-send verification link</string>
+    <string name="lbl_didnt_receive_it">"Didn't receive it?"</string>
+    <string name="lbl_verify_instruction_1">"To submit receipts, please
+click the link we sent to:"</string>
+    <string name="lbl_verify_account">Verify account</string>
+
+    <color name="mint_green">#fff3ffeb</color>
+
+    <string name="btn_set_notifications">Set Notifications</string>
+    <string name="lbl_push_description_1">Enable push notifications to be the first to know about special offers. No spam, promise!</string>
+    <string name="lbl_push_title">Be first to know</string>
+    <string name="lbl_offline_body">To upload receipts or view updated offer and account information you must be online.</string>
+    <string name="lbl_offline">Offline</string>
+
+    <color name="ian_cinnabar">#ffe84a4a</color>
+
+    <string name="lbl_offline_subtitle">Your device is currently not connected to the internet.</string>
+    <string name="btn_back_to_login">Back to Login</string>
+    <string name="lbl_reset_password_instruction_after">Click the link provided to reset your password.</string>
+    <string name="lbl_password_reset_conf">"We've just sent a link to your
+email address."</string>
+    <string name="lbl_password_reset">Password reset</string>
+    <string name="lbl_remember_password">I remember my password!</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="lbl_enter_email">Enter your email address</string>
+    <string name="lbl_claim_tip_2">"Offers are limited in quantity.
+When you see one you like, claim it while you can!"</string>
+
+    <color name="checkout_green">#ff76b844</color>
+
+    <string name="lbl_claim_tip_1">Tip on claiming offers</string>
+    <string name="lbl_be_patient">This can take a few seconds.</string>
+    <string name="lbl_uploading">Uploading!</string>
+
+    <color name="pema_polo_blue">#ff7eacd2</color>
+    <color name="andrews_atomic_tangerine">#ffff996e</color>
+    <color name="drop_shadow">#10000000</color>
+
+    <dimen name="rounded_corners">8.0dip</dimen>
+
+    <string name="lbl_disclaimer">By signing in you agree to the&lt;br />&lt;a href=\"https://www.samleimobile.com/terms\">Terms&lt;/a> and &lt;a href=\"https://www.samleimobile.com/privacy\">Privacy Policy&lt;/a></string>
+
+    <color name="regatta">#ff2d96d3</color>
+    <color name="peter_pickle_bluewood">#ff344c60</color>
+    <color name="light_gray">#ff323532</color>
+    <color name="katz_gray">#ff80807e</color>
+    <color name="calvin_gray">#ff242624</color>
+    <color name="silver_cloud">#ffbfc0bb</color>
+
+    <string name="btn_sign_in_email">Sign in with Email</string>
+    <string name="btn_sign_in_skip">Skip</string>
+    <string name="btn_sign_in_fb">Sign in with Facebook</string>
+    <string name="caution">By signing in you agree to the Terms and Privacy Policy</string>
+    <string-array name="User_Type"> 
+        <item>User</item>
+        <item>Organization</item>
+        
+    </string-array>
+
+</resources>

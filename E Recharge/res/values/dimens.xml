@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="default_view_spacing">16.0dip</dimen>
+    <dimen name="action_bar_height">47.0dip</dimen>
+    <dimen name="font_size_14">14.0sp</dimen>
+    <item type="dimen" name="line_spacing">1.2</item>
+    <dimen name="btn_fb_share_vertical_padding">10.0dip</dimen>
+    <dimen name="btn_fb_share_horizontal_padding">10.0dip</dimen>
+    <dimen name="drop_shadow">3.0dip</dimen>
+    <dimen name="btn_height">40.0dip</dimen>
+    <dimen name="activity_horizontal_margin_larger">20.0dip</dimen>
+    <dimen name="sab_alt_height">60.0dip</dimen>
+    <dimen name="btn_padding_bottom">2.0dip</dimen>
+    <dimen name="btn_alt_spacing">7.0dip</dimen>
+    <dimen name="font_size_12">12.0sp</dimen>
+    <dimen name="sc_default_view_spacing">8.0dip</dimen>
+    <dimen name="font_size_claim_amount">20.0dip</dimen>
+    <dimen name="default_view_spacing_smaller">8.0dip</dimen>
+    <dimen name="font_size_18">18.0sp</dimen>
+    <dimen name="action_bar_padding">10.0dip</dimen>
+    <dimen name="action_bar_height_w_shadow">50.0dip</dimen>
+    <dimen name="font_size_16">16.0sp</dimen>
+    <dimen name="upload_view_spacing">32.0dip</dimen>
+    <dimen name="btn_width">220.0dip</dimen>
+    <dimen name="sab_height_w_shadow">52.0dip</dimen>
+    <dimen name="sab_padding_top">2.0dip</dimen>
+    <dimen name="font_size_38">38.0sp</dimen>
+    <dimen name="large_title_alt_height">70.0dip</dimen>
+    <dimen name="progress_bar_padding">10.0dip</dimen>
+    <dimen name="dpb_height">10.0dip</dimen>
+    <dimen name="dpb_rounded_corners">5.0dip</dimen>
+    <dimen name="disclaimer_margin_bottom">8.0dip</dimen>
+    <dimen name="btn_sign_in_width">240.0dip</dimen>
+    <dimen name="receipt_stars_vertical_margin">12.0dip</dimen>
+    <dimen name="receipt_width">300.0dip</dimen>
+    <dimen name="logo_width">200.0dip</dimen>
+    <item type="dimen" name="logo_weight">1.1</item>
+    
+
+</resources>

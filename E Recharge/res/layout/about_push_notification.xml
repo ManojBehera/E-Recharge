@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin_larger"
+    android:paddingRight="@dimen/activity_horizontal_margin_larger"
+    android:weightSum="1.0" >
+
+    <RelativeLayout style="@style/LargeTitleAlt" >
+
+        <TextView
+            style="@style/LargeTitleLabelAlt"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/lbl_push_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/descriptions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_horizontal_margin_larger" >
+
+        <TextView
+            android:id="@+id/push_description_1"
+            style="@style/Title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_view_spacing"
+            android:gravity="center_horizontal"
+            android:text="@string/lbl_push_description_1" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/prompt_notifications_bubble" />
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin_larger" >
+
+        <Button
+            android:id="@+id/btn_set"
+            style="@style/ButtonDark"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/default_view_spacing"
+            android:onClick="finish"
+            android:text="@string/btn_set_notifications" />
+    </RelativeLayout>
+
+</LinearLayout>

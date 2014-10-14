@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content" android:background="@color/mint_green" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout style="@style/LargeTitleAlt">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" style="@style/LargeTitleLabelAlt" />
+        </RelativeLayout>
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_view_spacing" android:layout_marginBottom="@dimen/default_view_spacing" android:text="@string/lbl_walk_finding_area" style="@style/Title" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/default_view_spacing" android:layout_marginTop="@dimen/default_view_spacing" android:layout_marginRight="@dimen/default_view_spacing" android:layout_marginBottom="@dimen/default_view_spacing">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/walkthrough_findlocation_pin_shadow" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/pin_with_rays" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/walkthrough_findlocation_pin" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/rays" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/walkthrough_findlocation_pin_rays" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:layout_width="wrap_content" android:layout_height="@dimen/sab_alt_height" />
+    </LinearLayout>
+</RelativeLayout>

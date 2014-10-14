@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="0.0dip"
+    android:layout_weight="1.0"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/hiw_info_graphic_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@color/checkout_green"
+        android:src="@drawable/hiw_info_graphic_1" />
+
+    <ImageView
+        android:id="@+id/hiw_info_graphic_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hiw_info_graphic_1"
+        android:adjustViewBounds="true"
+        android:background="@color/andrews_atomic_tangerine"
+        android:src="@drawable/hiw_info_graphic_2" />
+
+    <ImageView
+        android:id="@+id/hiw_info_graphic_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hiw_info_graphic_2"
+        android:adjustViewBounds="true"
+        android:background="@color/pema_polo_blue"
+        android:src="@drawable/hiw_info_graphic_3" />
+    <!-- <ImageView
+        android:id="@+id/hiw_info_graphic_4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hiw_info_graphic_3"
+        android:adjustViewBounds="true"
+        android:background="@color/pema_polo_blue"
+        android:src="@drawable/hiw_info_graphic_3" /> -->
+
+</RelativeLayout>

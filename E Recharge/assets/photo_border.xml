@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:tag="l" android:background="@drawable/preview_border_left_black" android:layout_width="@dimen/camera_border_width" android:layout_height="fill_parent" />
+    <View android:tag="r" android:background="@drawable/preview_border_right_black" android:layout_width="@dimen/camera_border_width" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/font_size_16" android:textColor="@*android:color/white" android:gravity="top|center" android:tag="no" android:visibility="gone" android:layout_width="@dimen/section_no_width" android:layout_height="fill_parent" />
+    <RelativeLayout android:tag="camera_cut" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/camera_border_width" android:layout_marginRight="@dimen/camera_border_width">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/camera_cut" android:adjustViewBounds="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:tag="dash" android:background="@drawable/dash" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_alignParentBottom="true" />
+    <TextView android:tag="retake" android:layout_marginLeft="@dimen/camera_border_width" android:layout_marginTop="@dimen/camera_tip_store_margin_top" android:layout_marginRight="@dimen/camera_border_width" android:text="@string/lbl_tip_retake" style="@style/CameraTip" />
+    <TextView android:tag="date_total" android:layout_marginLeft="@dimen/camera_border_width" android:layout_marginRight="@dimen/camera_border_width" android:text="@string/lbl_tip_date_total" android:layout_alignParentBottom="true" style="@style/CameraTip" />
+</RelativeLayout>

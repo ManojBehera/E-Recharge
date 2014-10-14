@@ -1,0 +1,146 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Link" parent="@style/Label">
+        <item name="android:textColor">@color/regatta</item>
+        <item name="android:paddingBottom">0.0dip</item>
+    </style>
+
+    <style name="FauxLink" parent="@style/Label">
+        <item name="android:paddingBottom">0.0dip</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:textSize">@dimen/font_size_12</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ButtonLight" parent="@style/Button">
+        <item name="android:background">@drawable/btn_light_selector</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textSize">@dimen/font_size_16</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingBottom">@dimen/btn_padding_bottom</item>
+        <item name="android:layout_width">@dimen/btn_width</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="SkipButton">
+        <item name="android:textSize">@dimen/font_size_16</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingBottom">@dimen/btn_padding_bottom</item>
+        <item name="android:layout_width">@dimen/btn_width</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Input">
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:background">@drawable/edit_text_holo_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Title" parent="@style/Label">
+        <item name="android:textSize">@dimen/font_size_18</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="InputDropdown">
+        <item name="android:textSize">@dimen/font_size_14</item>
+        <item name="android:background">@drawable/spinner_holo_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SplitActionBarAlt" parent="@style/SplitActionBar">
+        <item name="android:background">@color/light_gray</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:layout_height">@dimen/sab_alt_height</item>
+    </style>
+
+    <style name="SplitActionBar">
+        <item name="android:background">@drawable/bg_sab</item>
+        <item name="android:paddingTop">@dimen/sab_padding_top</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/sab_height_w_shadow</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="LargeTitleLabelAlt">
+        <item name="android:textSize">@dimen/font_size_38</item>
+        <item name="android:textColor">@color/checkout_green</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="LargeTitleAlt">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/large_title_alt_height</item>
+    </style>
+
+    <style name="ProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:background">@drawable/bg_loader</item>
+        <item name="android:padding">@dimen/progress_bar_padding</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="ButtonDark" parent="@style/Button">
+        <item name="android:background">@drawable/btn_dark_selector</item>
+    </style>
+
+    <style name="DeterminantProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/dpb_height</item>
+        <item name="android:progressDrawable">@drawable/progress_bar</item>
+    </style>
+
+    <style name="ButtonClear" parent="@style/Button">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/btn_clear_selector</item>
+    </style>
+    
+    <style name="ButtonSkip" parent="@style/SkipButton">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/btn_clear_selector</item>
+    </style>
+
+    <style name="ButtonFbLogin" parent="@style/Button">
+        <item name="android:background">@drawable/btn_fb_login</item>
+        <item name="android:paddingLeft">15.0dip</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

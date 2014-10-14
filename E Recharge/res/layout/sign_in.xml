@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            style="@style/Title"
+            android:layout_marginBottom="@dimen/default_view_spacing"
+            android:text="@string/lbl_login" />
+
+        <EditText
+            android:id="@+id/input_email"
+            style="@style/Input"
+            android:layout_marginBottom="@dimen/default_view_spacing"
+            android:hint="@string/lbl_email"
+            android:inputType="textEmailAddress" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/input_password"
+            style="@style/Input"
+            android:layout_marginBottom="@dimen/default_view_spacing"
+            android:hint="@string/lbl_password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/ButtonLight"
+            android:layout_marginBottom="@dimen/default_view_spacing"
+            android:onClick="signIn"
+            android:text="@string/btn_login" />
+
+        <TextView
+            style="@style/Link"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:id="@+id/forgotpassword"
+            android:text="@string/lbl_forgot_password" />
+    </LinearLayout>
+
+    <include layout="@layout/action_bar" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@color/mint_green" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/LargeTitleAlt">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_walk_lets_find_offers" android:layout_centerHorizontal="true" style="@style/LargeTitleLabelAlt" />
+    </RelativeLayout>
+    <TextView android:gravity="center" android:layout_marginTop="@dimen/default_view_spacing" android:text="@string/lbl_walk_set_your_location" style="@style/Title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/default_view_spacing" android:layout_marginTop="@dimen/default_view_spacing" android:layout_marginRight="@dimen/default_view_spacing" android:layout_marginBottom="@dimen/default_view_spacing" android:layout_weight="1.0">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/globe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/walkthrough_setlocation_globe" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/shadow" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/walkthrough_setlocation_pin_shadow" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/pin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/walkthrough_setlocation_pin" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/sab_alt_height">
+        <Button android:text="@string/btn_walk_set_your_location" android:onClick="proceed" style="@style/ButtonDark" />
+    </RelativeLayout>
+</LinearLayout>

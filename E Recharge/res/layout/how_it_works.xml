@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/LargeTitleAlt"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_larger"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_larger" >
+
+        <TextView
+            style="@style/LargeTitleLabelAlt"
+            android:layout_centerHorizontal="true"
+            android:text="@string/lbl_how_it_works" />
+    </RelativeLayout>
+
+    <include layout="@layout/hiw_info_graphic" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sab_alt_height"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_get_started"
+            style="@style/ButtonLight"
+            android:text="@string/btn_get_started"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

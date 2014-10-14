@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:windowBackground="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="@dimen/logo_weight" >
+
+            <ImageView
+                android:layout_width="@dimen/logo_width"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <ViewSwitcher
+                android:id="@+id/view_switcher"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inAnimation="@anim/receipt_slide_in_up"
+                android:outAnimation="@anim/receipt_slide_out_down" >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/sign_in"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ImageView
+                        android:layout_width="@dimen/receipt_width"
+                        android:layout_height="fill_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/bg_receipt" />
+
+                    <ImageView
+                        android:id="@+id/bg_receipt_top"
+                        android:layout_width="@dimen/receipt_width"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/bg_receipt_top"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/bg_receipt_ph" />
+
+                    <Button
+                        android:id="@+id/btn_sign_in_fb"
+                        style="@style/ButtonFbLogin"
+                        android:layout_width="@dimen/btn_sign_in_width"
+                        android:layout_below="@id/bg_receipt_top"
+                        android:layout_marginBottom="0.0dip"
+                        android:layout_marginLeft="0.0dip"
+                        android:layout_marginRight="0.0dip"
+                        android:layout_marginTop="@dimen/default_view_spacing"
+                        android:onClick="signInWithFb"
+                        android:text="@string/btn_sign_in_fb" />
+
+                    <ImageView
+                        android:id="@+id/receipt_stars"
+                        android:layout_width="@dimen/btn_sign_in_width"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn_sign_in_fb"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/receipt_stars_vertical_margin"
+                        android:layout_marginLeft="30.0dip"
+                        android:layout_marginRight="30.0dip"
+                        android:layout_marginTop="@dimen/receipt_stars_vertical_margin"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/receipt_stars_or" />
+
+                    <Button
+                        android:id="@+id/btn_sign_in_email"
+                        style="@style/ButtonClear"
+                        android:layout_width="@dimen/btn_sign_in_width"
+                        android:layout_below="@id/receipt_stars"
+                        android:layout_marginLeft="0.0dip"
+                        android:layout_marginRight="0.0dip"
+                        android:text="@string/btn_sign_in_email" />
+                    <Button
+                        android:id="@+id/btn_sign_in_skip"
+                        style="@style/ButtonClear"
+                        android:layout_width="@dimen/btn_sign_in_width"
+                        android:layout_below="@id/btn_sign_in_email"
+                        android:layout_marginLeft="0.0dip"
+                        android:layout_marginRight="0.0dip"                        
+                        android:text="@string/btn_sign_in_skip" />
+
+                    <TextView
+                        android:id="@+id/disclaimer"
+                        style="@style/Label"
+                        android:layout_width="@dimen/btn_sign_in_width"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/disclaimer_margin_bottom"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:textColorLink="@color/regatta" />
+                </RelativeLayout>
+            </ViewSwitcher>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/ProgressBar" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

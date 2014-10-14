@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_bar_height" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                style="@style/Title"
+                android:layout_marginBottom="@dimen/default_view_spacing"
+                android:text="@string/lbl_recharge_account" />
+
+            <EditText
+                android:id="@+id/input_first_name"
+                style="@style/Input"
+                android:layout_marginBottom="@dimen/default_view_spacing"
+                android:hint="@string/lbl_mobile_number"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+
+            <Spinner
+                android:id="@+id/input_last_name"
+                style="@style/InputDropdown"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"                
+                android:spinnerMode="dialog"
+                android:textSize="@dimen/font_size_14" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_marginTop="30dp"
+                style="@style/Input"
+                android:layout_marginBottom="@dimen/default_view_spacing"
+                android:hint="@string/lbl_amount"
+                android:inputType="number" />
+
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                
+
+                <TextView
+                    style="@style/Label"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/default_view_spacing"
+                    android:text="@string/lbl_tailor_offers" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginBottom="@dimen/default_view_spacing"
+                    android:layout_marginTop="@dimen/default_view_spacing" />
+
+                <Button
+                    android:id="@+id/btn_done"
+                    style="@style/ButtonLight"
+                    android:layout_marginBottom="@dimen/default_view_spacing"
+                    android:text="@string/btn_continue" />
+
+                <TextView
+                    android:id="@+id/login"
+                    style="@style/Link"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:text="@string/lbl_have_coupons" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/action_bar" />
+
+</RelativeLayout>

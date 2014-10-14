@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height_w_shadow"
+        android:background="@drawable/action_bar" >
+
+        <ImageView
+            android:id="@+id/ab_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="1.0dip"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/action_bar_padding"
+            android:scaleType="fitStart" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.0dip"
+            android:padding="@dimen/action_bar_padding"
+            android:src="@drawable/action_bar_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/ab_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1.0dip"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/action_bar_padding"
+                android:scaleType="fitEnd" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
