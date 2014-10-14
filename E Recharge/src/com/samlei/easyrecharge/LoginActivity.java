@@ -1,4 +1,4 @@
-package com.vmoksha.easyrecharge;
+package com.samlei.easyrecharge;
 
 import android.app.Activity;
 import android.content.Intent;

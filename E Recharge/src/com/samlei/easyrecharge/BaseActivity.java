@@ -1,4 +1,4 @@
-package com.vmoksha.easyrecharge;
+package com.samlei.easyrecharge;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,23 +7,28 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class PasswordResetConrfm extends Activity {
+public class BaseActivity extends Activity {
+
 	Button btn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.reset_confirmation);
-		btn = (Button) findViewById(R.id.back);
+		setContentView(R.layout.how_it_works);
+
+		btn = (Button) findViewById(R.id.btn_get_started);
+
 		btn.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(PasswordResetConrfm.this,
-						LoginActivity.class);
+				Intent intent = new Intent(BaseActivity.this,
+						MainActivity.class);
 				startActivity(intent);
 
 			}
 		});
+
 	}
+
 }
